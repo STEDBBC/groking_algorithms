@@ -6,8 +6,8 @@ public class BinarySearch {
     public static void main(String[] args) {
         int[] myList = {87, 21, 45, 93};
 
-        System.out.println(binarySearch(myList, 93));
-        System.out.println(binarySearch(myList, 16));
+        System.out.println(binarySearch(myList, 93));// вывод индекса элемента в массиве
+        System.out.println(binarySearch(myList, 21)); // вывод индекса элемента в массиве
 
     }
 
