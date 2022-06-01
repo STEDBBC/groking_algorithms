@@ -6,8 +6,8 @@ public class BinarySearch {
     public static void main(String[] args) {
         int[] myList = {87, 21, 45, 93};
 
-        System.out.println(binarySearch(myList,93));
-        System.out.println(binarySearch(myList,16));
+        System.out.println(binarySearch(myList, 93));
+        System.out.println(binarySearch(myList, 16));
 
     }
 
@@ -15,7 +15,6 @@ public class BinarySearch {
         if (isListEmpty(list)) {
             return -1;
         }
-        
         int low = 0;
         int high = list.length - 1;
 
@@ -28,7 +27,7 @@ public class BinarySearch {
             } else if (guessGreaterThanItem(guess, item)) {
                 high = mid - 1;
             } else if (guessLessThanItem(guess, item)) {
-                low = mid - 1;
+                low = mid + 1;
             }
         }
         return -1;
